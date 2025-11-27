@@ -6,7 +6,7 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cartItems = List.generate(3, (i) => 'Hamburguesa $i');
+    final cartItems = List.generate(3, (i) => 'Hamburguesa tipo ${i+1}');
 
     return Scaffold(
       appBar: AppBar(title: const Text('Carrito')),
