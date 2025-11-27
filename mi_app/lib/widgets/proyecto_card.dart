@@ -58,7 +58,7 @@ class ProyectoCard extends StatelessWidget {
 
           // Título del proyecto
           Text(
-            'Sistema de Gestión de reserva de citas para clientes de una estetica', // 👈 CAMBIA ESTE TEXTO
+            'App de Pedido de Comida Rápida', // 
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -70,9 +70,9 @@ class ProyectoCard extends StatelessWidget {
 
           // Descripción del proyecto
           Text(
-            'Aplicación web para gestionar reservas de citas para clientes , '
-            'registro de usuarios y reserva de citas. Desarrollado '
-            'como proyecto final de tesis.', // 👈 CAMBIA ESTE TEXTO
+            'Aplicación móvil que permite a los usuarios pedir comida rápida, '
+            'ver menús, rastrear pedidos en tiempo real y gestionar pagos. '
+            'Incluye panel para restaurantes y notificaciones en vivo.',
             style: TextStyle(
               fontSize: 24,
               color: Colors.grey[600],

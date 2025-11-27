@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
 
       //barra superior
       appBar: AppBar(
-        title: const Text('Mi Portafolio'),
+        title: const Text('App pedido de comida rápida'),
         centerTitle: true,
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             //Titulo de seccion
             Text(
-              'Mis Proyectos',
+              'Pedido de comida',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,

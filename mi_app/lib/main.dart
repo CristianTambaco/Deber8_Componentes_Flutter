@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // titulo de la aplicacion
-      title: 'Mi Portafolio',
+      title: 'App fast food',
 
       //tema de colores de la app
 
