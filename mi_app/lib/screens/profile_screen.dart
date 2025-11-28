@@ -45,7 +45,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             TextField(
               controller: _addressController,
               decoration: const InputDecoration(labelText: 'Dirección de entrega'),
-              maxLines: 2,
+              // maxLines: 2,
             ),
             const SizedBox(height: 32),
             Align(
