@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: Color.fromARGB(255, 0, 26, 255)),
-              child: Center(child: Text('Opciones', style: TextStyle(fontSize: 24, color: Colors.white))),
+              child: Center(child: Text('Menú', style: TextStyle(fontSize: 24, color: Colors.white))),
             ),
             ListTile(
               leading: const Icon(Icons.home),
