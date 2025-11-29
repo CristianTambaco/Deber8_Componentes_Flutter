@@ -62,14 +62,18 @@ class HomeScreen extends StatelessWidget {
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
                 children: List.generate(6, (index) {
-                  return GestureDetector(
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => ProductDetailScreen(name: 'Orden ${index+1}')),
-                    ),
-                    child: const ProductCard(),
-                  );
-                }),
+  // 👇 Definimos un precio diferente para cada tarjeta
+  final prices = [8.99, 11.99, 14.50, 9.99, 12.75, 15.00];
+  double currentPrice = prices[index];
+
+  return GestureDetector(
+    onTap: () => Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => ProductDetailScreen(name: 'Orden ${index+1}')),
+    ),
+    child: ProductCard(price: currentPrice), // 👈 Pasamos el precio
+  );
+}),
               ),
             ),
             const SizedBox(height: 16),
