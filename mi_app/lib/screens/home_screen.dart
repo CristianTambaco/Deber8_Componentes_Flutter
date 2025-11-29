@@ -20,7 +20,8 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const CartScreen())),
+            onPressed: () => Navigator.push(
+                context, MaterialPageRoute(builder: (_) => const CartScreen())),
             icon: const Icon(Icons.shopping_cart),
           ),
         ],
@@ -31,7 +32,9 @@ class HomeScreen extends StatelessWidget {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(color: Color.fromARGB(255, 0, 26, 255)),
-              child: Center(child: Text('Menú', style: TextStyle(fontSize: 24, color: Colors.white))),
+              child: Center(
+                  child: Text('Menú',
+                      style: TextStyle(fontSize: 24, color: Colors.white))),
             ),
             ListTile(
               leading: const Icon(Icons.home),
@@ -41,7 +44,8 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.person),
               title: const Text('Perfil'),
-              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ProfileScreen())),
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (_) => const ProfileScreen())),
             ),
           ],
         ),
@@ -61,19 +65,22 @@ class HomeScreen extends StatelessWidget {
                 crossAxisCount: 2,
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
-                children: List.generate(6, (index) {
-  // 👇 Definimos un precio diferente para cada tarjeta
-  final prices = [8.99, 11.99, 14.50, 9.99, 12.75, 15.00];
-  double currentPrice = prices[index];
+                children: List.generate(4, (index) {
+                  // 👇 Definimos un precio diferente para cada tarjeta
+                  final prices = [8.99, 11.99, 14.50, 9.99, 12.75, 15.00];
+                  double currentPrice = prices[index];
 
-  return GestureDetector(
-    onTap: () => Navigator.push(
-      context,
-      MaterialPageRoute(builder: (_) => ProductDetailScreen(name: 'Orden ${index+1}')),
-    ),
-    child: ProductCard(price: currentPrice), // 👈 Pasamos el precio
-  );
-}),
+                  return GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) =>
+                              ProductDetailScreen(name: 'Orden ${index + 1}')),
+                    ),
+                    child: ProductCard(
+                        price: currentPrice), // 👈 Pasamos el precio
+                  );
+                }),
               ),
             ),
             const SizedBox(height: 16),
