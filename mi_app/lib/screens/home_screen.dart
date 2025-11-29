@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
                 children: List.generate(4, (index) {
-                  // 👇 Definimos un precio diferente para cada tarjeta
+                  //  Definimos un precio diferente para cada tarjeta
                   final prices = [8.99, 11.99, 14.50, 9.99, 12.75, 15.00];
                   double currentPrice = prices[index];
 
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (_) =>
-                              ProductDetailScreen(name: 'Orden ${index + 1}')),
+                              ProductDetailScreen(name: 'Hamburguesa tipo ${index + 1}')),
                     ),
                     child: ProductCard(
                         price: currentPrice), //  Pasamos el precio
